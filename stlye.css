@@ -1,0 +1,44 @@
+.container {
+  padding-top: 30px;
+  width: 100%;
+}
+
+.card {
+  position: relative;
+  display: table;
+  margin: 0 auto;
+  background: #A3E7D8;
+  width: 80%;
+  height: 75vh;
+  border-radius: 6px;
+  padding: 2rem;
+  color: rgb(58, 58, 58);
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.your-img {
+  position: absolute;
+  margin: auto;
+  right: 0;
+  margin-right: 3rem;
+  height: 150px;
+  width: auto;
+  max-width: 500px;
+  border-radius: 5%;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2),
+    0 0 1rem rgba(0, 0, 0, 0.842);
+}
+
+.card-header {
+  margin-top: 0.5rem;
+}
+
+.card-body {
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+.text-header {
+  text-align: center;
+}
