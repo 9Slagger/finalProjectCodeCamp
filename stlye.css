@@ -7,7 +7,7 @@
   position: relative;
   display: table;
   margin: 0 auto;
-  background: #A3E7D8;
+  background: #a3e7d8;
   width: 80%;
   height: 75vh;
   border-radius: 6px;
@@ -35,31 +35,80 @@
 }
 
 .card-body {
-    margin-left: 15rem;
-    margin-right: 15rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
 }
 
 .text-header {
   text-align: center;
 }
 
-@media only screen and (max-width:1024px) {
-    .card-body {
-        margin-left: 7rem;
-        margin-right: 7rem;
-    }
+@media only screen and (max-width: 1024px) {
+  .card-body {
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
 }
 
-@media only screen and (max-width:800px) {
-    .card-body {
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
+@media only screen and (max-width: 800px) {
+  .card-body {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
 
-@media only screen and (max-width:720px) {
-    .card-body {
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
+@media only screen and (max-width: 720px) {
+  .card-body {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+#cardEditButton {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.icon {
+  color: blue;
+}
+
+#editButton {
+  font-size: 18px;
+  background-color: white;
+  color: black;
+  border: 2px solid #4caf50;
+}
+
+#editButton:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+#saveButton {
+  font-size: 18px;
+  background-color: white;
+  color: black;
+  border: 2px solid #008cba;
+}
+
+#saveButton:hover {
+  background-color: #008cba;
+  color: white;
+}
+
+#saveSkillButton {
+  font-size: 15px;
+  background-color: white;
+  color: black;
+  border: 2px solid #008cba;
+}
+
+#saveSkillButton:hover {
+  background-color: #008cba;
+  color: white;
+}
+
+h2 {
+  font-family: "Kanit", sans-serif;
 }

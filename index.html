@@ -1,63 +1,79 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Resume Akkarapong Khamtanet</title>
+
+<head>
+    <title>Resume</title>
     <link rel="stylesheet" href="stlye.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <script src="script.js"></script>
     <div class="container">
-      <div class="card">
-        <div class="card-header">
-          <img
-            class="your-img"
-            alt="your photo"
-            src="https://sv1.picz.in.th/images/2019/10/20/cy691S.jpg"
-          />
-        </div>
-        <h1 class="text-header">Resume</h1>
-        <div class="card-body">
-          <br /><br />
-          <div>
-            <h2 class="text-title">Personal Information</h2>
-            <span><label>FullName : </label><label>Mr. Akkarapong Khamtanet</label></span>
-            <br />
-            <span><label>NickName : </label><label>George</label></span>
-            <br />
-            <span><label>Birthday : </label><label>XX February 1996</label></span>
-            <br />
-            <span><label>E-Mail : </label><label>akkarapong.kh@gmail.com</label></span>
-            <br />
-            <span><label>PhoneNumber : </label><label>099-XXX-XXXX</label></span>
-            <br />
-            <hr />
+        <div class="card">
+            <div class="card-header">
+                    <img id="photo" class="your-img" alt="your photo"
+                        src="https://sv1.picz.in.th/images/2019/10/20/cy691S.jpg" />
+            </div>
+            <h1 class="text-header">Resume</h1>
+            <div class="card-body" onmouseover="hoverCard();">
+                <br /><br />
+                <div>
+                    <h2 id="personal" class="text-title">ข้อมูลส่วนตัว</h2>
+                    <span id="fullnameSP"><label>FullName : </label><label id="fullname">Mr. Akkarapong Khamtanet</label><input size="60" id="fullnameIP" type="text" hidden /></span>
+                    <br />
+                    <span id="nicknameSP"><label>NickName : </label><label id="nickname">George</label><input size="60" id="nicknameIP" type="text" hidden /></span>
+                    <br />
+                    <span id="birthdaySP"><label>Birthday : </label><label id="birthday">XX February 1996</label><input size="60" id="birthdayIP" type="text" hidden /></span>
+                    <br />
+                    <span id="emilSP"><label>E-Mail : </label><label id="emil">akkarapong.kh@gmail.com</label><input size="60" id="emilIP" type="text" hidden /></span>
+                    <br />
+                    <span id="phonenumberSP"><label>PhoneNumber : </label><label id="phonenumber">099-XXX-XXXX</label><input size="60" id="phonenumberIP" type="text" hidden /></span>
+                    <br />
+                    <hr />
 
-            <h2 class="text-title">Education and Working Experience</h2>
-            <span><label>University : </label><label>Suranaree University of Technology</label></span>
-            <br />
-            <span><label>Faculty : </label><label>Engineering</label></span>
-            <br />
-            <span><label>Bachelor : </label><label>Computer Engineering</label></span>
-            <br />
-            <hr />
+                    <h2 id="education" class="text-title">ประวัติการศึกษาและการทำงาน</h2>
+                    <span id="universitySP"><label>University : </label><label id="university">Suranaree University of Technology</label><input size="60" id="universityIP" type="text" hidden /></span>
+                    <br />
+                    <span id="facultySP"><label>Faculty : </label><label id="faculty">Engineering</label><input size="60" id="facultyIP" type="text" hidden /></span>
+                    <br />
+                    <span id="bachelorSP"><label>Bachelor : </label><label id="bachelor">Computer Engineering</label><input size="60" id="bachelorIP" type="text" hidden /></span>
+                    <br />
+                    <hr />
 
-            <h2 class="text-title">Skills</h2>
-            <ul>
-                <li>Html and Css</li>
-                <li>Css Framework Bootstrap, Bulma</li>
-                <li>Javascript ES6</li>
-                <li>Linux command</li>
-                <li>version control (Git)</li>
-                <li>React.js and Next.js</li>
-                <li>basic Node.js for backend</li>
-                <li>basic mongodb</li>
-                <li>basic docker</li>
-                <li>basic CI/CD</li>
-                <li>basic Google Cloud Platform</li>
-            </ul>
-          </div>
+                    <h2 id="skills" class="text-title">ทักษะ</h2>
+                    <div id="skillList" onclick="chainList();">
+                        <ul>
+                            <li>Html and Css</li>
+                            <li>Css Framework Bootstrap, Bulma</li>
+                            <li>Javascript ES6</li>
+                            <li>Linux command</li>
+                            <li>version control (Git)</li>
+                            <li>React.js and Next.js</li>
+                            <li>basic Node.js for backend</li>
+                            <li>basic mongodb</li>
+                            <li>basic docker</li>
+                            <li>basic CI/CD</li>
+                            <li>basic Google Cloud Platform</li>
+                        </ul>
+                    </div>
+                    <div id="addSkill" hidden>
+                        <span>Skill : <input size="60" id="newSkill" type="text" /></span>
+                        <button id="saveSkillButton" onclick="addSkill();">Add Skill</button>
+                    </div>
+
+                    <div id="cardEditButton">
+                        <button hidden id="saveButton" onclick="clickSave();">Save <i class="fa fa-paper-plane-o"
+                                aria-hidden="true"></i></button>
+                        <button id="editButton" onclick="clickEditButton();">Edit <i class="fa fa-pencil"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </body>
+</body>
+
 </html>
